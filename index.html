@@ -24,7 +24,7 @@
   
   /* Create three equal columns that floats next to each other */
   .column {
-    float: left;
+    float: inline-start;
     width: 30%;
     padding: 10px;
     
@@ -42,6 +42,10 @@
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
+  }
+  /* Border around the columns */
+  .column {
+    border: 1px solid black;
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -66,17 +70,10 @@
   <p>With a <b>flexible</b> layout.</p>
 </div>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">Link1</a>
-  <a href="#">Link2</a>
-  <a href="#">Link3</a>
-  <a href="#">Link4</a>
-</div>
-
 <!-- The three columns with content  -->
 <div class="row">
   <div class="column c1">
+    <h2>Column 1</h2>
     <h2>About Me</h2>
     <h5>Photo of me:</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
@@ -88,6 +85,7 @@
     <div class="fakeimg" style="height:60px;">Image3</div>
   </div>
   <div class="column c2">
+    <h2>Column 2</h2>
     <h2>Popular Post</h2>
     <div class="fakeimg">Image</div><br>
     <h3>Post Title</h3>
@@ -100,6 +98,7 @@
     <h5>Title description, Sep 2, 2017</h5>
   </div>
   <div class="column c3">
+    <h2>Column 3</h2>
     <h2>Follow Me</h2>
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text..</p>
